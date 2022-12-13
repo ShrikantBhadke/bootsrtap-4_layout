@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css for navbar */
+
+.appheader .navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .5);
+  text-transform: capitalize;
+}
+
+.appheader .navbar-nav .active>.nav-link,
+.appheader .navbar-nav .nav-link.active,
+.appheader .navbar-nav .nav-link.show,
+.appheader .navbar-nav .show>.nav-link {
+  color: orange !important;
+}
+
+.appheader .navbar-brand {
+  width: 120px;
+  display: inline-block;
+}
+
+.brandSlider .carousel-item {
+  height: 450px;
+}
+
+.brandSlider .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandSlider .carousel-caption {
+  bottom: auto;
+  top: 20%;
+}
+
+.homeHeading,
+.video {
+  background-image: url("https://iamrk-js.github.io/bootstrap4/assets/images/lights.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.homeHeading::before,
+.video::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+
+}
+
+
+.homeHeading .row {
+  z-index: 1;
+}
+
+.video {
+
+  background-image: url("https://iamrk-js.github.io/bootstrap4/assets/images/media.jpg");
+}
+
+
+.faq .card {
+
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.faq button.btn.btn-link {
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+}
+
+
+.footer {
+  background-color: #000;
+  font-size: 18px;
+}
+
+/* css responsive */
+
+@media all and (max-width:768px) {
+  .brandSlider .carousel-caption h3 {
+    font-size: 2.4rem;
+  }
+}
